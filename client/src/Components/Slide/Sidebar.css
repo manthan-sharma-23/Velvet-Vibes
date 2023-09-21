@@ -1,0 +1,192 @@
+#sidebar {
+  width: 25%;
+  right: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  /* border: 2px solid red; */
+  background-color: transparent;
+}
+#sidebar .content {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid rgb(179, 22, 22); */
+  position: relative;
+  right: -100%;
+  display: flex;
+  z-index: 3;
+  justify-content: center;
+  align-items: end;
+  transition: 650ms;
+  background-color: rgb(0, 0, 0);
+}
+#sidebar .active {
+  right: 0;
+}
+
+#sidebar .links {
+  width: 100%;
+  /* border: 2px solid rgb(221, 10, 45); */
+  height: calc(100% - 60px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sidebar .links .hello {
+  font-family: "Borel", cursive;
+  font-size: 1.5rem;
+  color: rgb(252, 133, 153);
+  /* border: 2px solid white; */
+  height: auto;
+  width: 100%;
+  text-align: center;
+  line-height: 4.5vh;
+  padding-top: 15px;
+}
+#sidebar .links .line {
+  width: 65%;
+  border: 1.5px solid rgba(255, 217, 0, 0.904);
+  margin-bottom: 20px;
+}
+
+#sidebar .links .linkz {
+  height: 35%;
+  width: 100%;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  margin-bottom: 20px;
+  padding-left: 2rem;
+}
+#sidebar .links .linkz * {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+#sidebar .links .linkz span span {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+#sidebar .links .linkz span:hover {
+  color: rgb(225, 114, 133);
+  transform: scale(1.02);
+}
+#sidebar .links .linkz span * {
+  margin: 0px 5px;
+}
+#sidebar .links .navigator {
+  height: 50%;
+  margin: 10px 0px;
+  width: 100%;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#sidebar .links .navigator .param {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid green; */
+}
+#sidebar .links .navigator .param * {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+
+  color: rgb(224, 224, 224);
+  font-size: 0.9rem;
+  /* border: 2px solid red; */
+  font-family: "Poppins", sans-serif;
+}
+#sidebar .links .navigator .param *:hover {
+  color: gold;
+}
+#sidebar .links .navigator .social {
+  height: 15%;
+  width: 100%;
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sidebar .links .navigator .social * {
+  font-size: 1.2rem;
+  margin: 0px 20px;
+  color: #d0bcbce1;
+  cursor: pointer;
+}
+#sidebar .links .navigator .social *:hover {
+  color: palevioletred;
+}
+#sidebar .links .unactive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#sidebar .links .logout_button * {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  color: rgb(237, 237, 237);
+  transition: 0.4s;
+}
+
+#sidebar .links .logout_button * :nth-child(1) {
+  margin: 4px;
+  color: gold;
+  position: relative;
+  top: 8.5px;
+  font-size: 1.2rem;
+}
+#sidebar .links .logout_button *:hover {
+  letter-spacing: 0.6px;
+  color: rgb(5, 154, 5);
+}
+#sidebar .links .logout_button {
+  /* text-decoration: none; */
+  text-align: center;
+}
+
+#sidebar .links .inactive_button {
+  display: none;
+}
+#sidebar .links .unactive div button {
+  border-radius: 6px;
+  width: 60%;
+  height: 2.25rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border: 1px solid rgb(159, 114, 114);
+  transition: 400ms;
+  font-weight: 600;
+}
+#sidebar .links .unactive div button:hover {
+  background-color: palevioletred;
+  border: 2px solid pink;
+  color: white;
+}
+#sidebar .links .unactive div {
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding: 1.6rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

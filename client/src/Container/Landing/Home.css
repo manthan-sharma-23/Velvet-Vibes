@@ -1,0 +1,138 @@
+#home .suit {
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #000;
+  color: white;
+  z-index: 2;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  padding-bottom: 15vh;
+}
+
+#home .top-h .title {
+  font-size: 6vw;
+  color: white;
+  text-shadow: 0 0 5px #2e201f;
+  background-color: transparent;
+  font-family: "Bodoni Moda", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 4vh;
+  text-align: start;
+  position: relative;
+  margin-top: 10vh;
+  width: 100%;
+  line-height: 17vh;
+  font-weight: 300;
+  padding-left: 3.5vw;
+}
+#home .top-h .title .logo {
+  color: gold;
+  position: relative;
+  bottom: 3vh;
+  font-size: 8vw;
+  width: 100%;
+  font-family: "Bodoni Moda", serif;
+}
+
+#home .top-h .title .nice {
+  position: relative;
+  bottom: 5vh;
+  font-family: "Bilbo Swash Caps", cursive;
+  letter-spacing: 4px;
+}
+#home .top-h .title .explore {
+  width: 10vw;
+  position: relative;
+  left: 2vw;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.25rem;
+  bottom: 3vh;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.836);
+  background-color: #0000000b;
+  height: 7vh;
+  cursor: pointer;
+  padding: 9px;
+  transition: 0.4s ease-in-out;
+  border-radius: 4.5px;
+}
+
+#home .top-h .title .explore:hover {
+  color: rgb(0, 0, 0);
+  border: 2px solid white;
+  background-color: rgb(255, 255, 255);
+  font-weight: 900;
+}
+#home {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: transparent;
+  overflow-x: hidden;
+  perspective: 10px;
+  margin-bottom: 20vh;
+  /* border: 2px solid white; */
+}
+
+#home .top-h {
+  position: relative;
+  /* overflow-x: hidden; */
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+#home .top-h .background {
+  position: absolute;
+  transform: translateZ(-30px) scale(4.05); /*Speed diffrence in parallax*/
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/*----------------- Mobile View -----------------*/
+
+@media (max-width: 600px) {
+  #home .top-h .title {
+    font-size: 13vw;
+    position: relative;
+    color: white;
+    font-weight: 800;
+    line-height: 10vh;
+  }
+  #home .top-h .title .logo {
+    bottom: 2.5vw;
+    font-size: 15vw;
+    /* border: 2px solid red; */
+    width: 100vw;
+  }
+
+  #home .top-h .title .explore {
+    width: 29vw;
+    height: 5vh;
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+
+  #home .top-h .title .nice {
+    bottom: 3.5vh;
+    font-size: 12vw;
+  }
+  #home .top-h .background {
+    transform: translateZ(-25px) scale(3.55);
+  }
+  #home .top-h {
+    height: 85%;
+  }
+}

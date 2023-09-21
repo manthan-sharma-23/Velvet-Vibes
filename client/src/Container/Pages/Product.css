@@ -1,0 +1,139 @@
+#products {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#products .parallax {
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform-style: preserve-3d;
+}
+
+#products .background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  transform: translateZ(-2px) scale(3.02);
+}
+
+#products .bg {
+  background: url("../../assets/images/cover/main.jpg") center / cover;
+  /* filter: blur(40px);
+  -webkit-filter: blur(20px); */
+}
+
+#products .salad {
+  background: url("../../assets/images/cover/salad.jpg") center / cover;
+}
+#products .beverages {
+  background: url("../../assets/images/cover/mocktail.jpg") center / cover;
+}
+#products .italian {
+  background: url("../../assets/images/cover/pizza.jpg") center / cover;
+}
+#products .cafe {
+  background: url("../../assets/images/cover/coffee.jpg") center / cover;
+}
+#products .deserts {
+  background: url("../../assets/images/cover/deserts.jpg") center / cover;
+}
+#products .cakes {
+  background: url("../../assets/images/cover/cakes.jpg") center / cover;
+}
+#products .indian {
+  background: url("../../assets/images/cover/indian.jpg") center / cover;
+}
+#products .snacks {
+  background: url("../../assets/images/cover/wraps.jpg") center / cover;
+}
+
+#products .normal {
+  width: 100vw;
+  height: auto;
+  padding-top: 8vh;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+
+  color: white;
+}
+
+#products .normal .heading_line {
+  position: relative;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#products .menu_line {
+  width: 100%;
+  height: 1px;
+  /* background-color: grey; */
+  border-bottom: 1px solid grey;
+}
+
+#products .product_name {
+  /* border-bottom: 2px solid wheat; */
+  width: auto;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  bottom: 50%;
+  text-align: center;
+
+  font-size: 2.55rem;
+  position: relative;
+  /* padding: 0px 20px; */
+  font-family: "Proxima N W01 Reg", "Poppins", sans-serif;
+}
+
+#products .normal .caro {
+  width: 95%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#products .texts {
+  position: relative;
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  background: rgba(30, 30, 30, 0.603);
+  font-weight: 700;
+  font-family: "Comforter Brush", cursive;
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+
+  text-shadow: 0 0 3px black;
+  text-shadow: 0 0 12px rgb(204, 38, 90);
+}
+#products .texts span {
+  /* font-family: "Pacifico", cursive; */
+  position: relative;
+  text-shadow: 0 0 2px gold;
+  top: 2.5vh;
+  font-size: 3rem;
+  font-family: "Borel", cursive;
+}

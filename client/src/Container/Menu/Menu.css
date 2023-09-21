@@ -1,0 +1,301 @@
+#items {
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#items .parallax {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0.5;
+  transform-style: preserve-3d;
+}
+
+#items .background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: -0.5;
+  left: 0;
+  transform: translateZ(-1px) scale(2.002);
+}
+
+#items .bg {
+  background: url("../../assets//images/cover/main.jpg") center / cover;
+}
+
+#items .buttons_meals {
+  width: 60%;
+  /* border: 2px solid gold; */
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#items .buttons_meals button {
+  width: 10vw;
+  background-color: transparent;
+  border: 1.1px solid white;
+  height: 6vh;
+  cursor: pointer;
+  color: white;
+  transition: 500ms;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+#items .buttons_meals button:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+}
+
+#items .meals_pallette {
+  width: 100%;
+  height: auto;
+  /* border: 2px solid pink; */
+  margin: 4vh 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#items .head_indian {
+  font-family: "Cormorant Upright", serif;
+  color: rgb(0, 214, 0);
+  height: auto;
+  text-align: center;
+  font-size: 3.7rem;
+  text-shadow: 0 0 3px white;
+  margin: 4vh 0;
+  font-weight: 900;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+#items .indian_scroll {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+#items .indian_scroll .toggle_caro {
+  position: absolute;
+  font-size: 2.8rem;
+  cursor: pointer;
+  background-color: rgb(52, 51, 51);
+  z-index: 4;
+  height: 65vh;
+  opacity: 0.55;
+  width: 3.5vw;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#items .indian_scroll .next {
+  left: 96.5vw;
+}
+
+#items .slider_india {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+#items .slider_india .indian_card {
+  position: relative;
+  font-family: "Bilbo Swash Caps", cursive;
+  display: inline-block;
+  width: 25vw;
+
+  margin: 0 0.5vw;
+  /* overflow: hidden; */
+
+  height: 100%;
+  cursor: pointer;
+}
+#items .slider_india .indian_card img {
+  width: 25vw;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(121, 121, 121);
+  object-fit: cover;
+  transition: 450ms;
+}
+#items .slider_india .indian_card .shade {
+  opacity: 0.6;
+  border: 2px solid rgb(40, 40, 40);
+}
+#items .slider_india .indian_card .item_name {
+  position: absolute;
+  top: 70%;
+  /* font-size: 3rem; */
+  font-size: 3rem;
+  width: 100%;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  /* text-overflow: clip; */
+  flex-wrap: wrap;
+  overflow: hidden;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.337);
+  padding-left: 1vw;
+  z-index: 3;
+  color: white;
+}
+#items .slider_india .indian_card .texty {
+  position: absolute;
+  z-index: 3;
+  color: white;
+  top: 40%;
+  width: 25vw;
+  /* border: 2px solid red; */
+  background-color: #00000087;
+  height: 30%;
+  align-items: center;
+  font-family: "Cormorant Upright", serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.9rem;
+  flex-wrap: wrap;
+}
+
+#items .normal {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 5vh;
+  color: white;
+}
+#items .normal .title {
+  color: white;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  /* border: 2px solid green; */
+  background-color: black;
+  /* text-shadow: 0 0 4px pink; */
+}
+#items .normal .title p {
+  /* border: 2px solid red; */
+  background-color: black;
+  position: relative;
+  z-index: 3;
+  font-family: "Proxima N W01 Reg";
+  color: rgb(255, 249, 239);
+
+  padding: 0px 10px;
+}
+#items .normal .title .line {
+  width: 70%;
+  position: absolute;
+  height: 0.2vh;
+  z-index: -0.2;
+  background-color: rgb(145, 143, 143);
+}
+#items .normal .menu {
+  width: 100vw;
+  height: auto;
+  /* border: 2px solid pink;  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+#card {
+  width: 24vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  /* margin: 3vh; */
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+}
+
+#card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 750ms;
+}
+#card img:hover {
+  transform: scale(1.2);
+}
+#card .name {
+  position: absolute;
+  font-family: "Lobster Two", cursive;
+  letter-spacing: 2.5px;
+  top: 60%;
+  padding-left: 3vh;
+  font-size: 4.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid green; */
+  width: 100%;
+  background-color: #00000061;
+  color: white;
+  font-variant: small-caps;
+
+  z-index: 3;
+}
+
+#items .texts {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0.09);
+  width: 100%;
+  font-weight: 700;
+  line-height: 12.5vh;
+  font-family: "Comforter Brush", cursive;
+  letter-spacing: 2px;
+  font-size: 2.7rem;
+  text-shadow: 0 0 13px rgb(162, 44, 80);
+}
+#items .texts span {
+  /* font-family: "Pacifico", cursive; */
+  position: relative;
+  top: 2.5vh;
+  font-size: 3.8rem;
+  color: white;
+  text-shadow: 0 0 3px black;
+  font-family: "Proxima N W01 Reg";
+}

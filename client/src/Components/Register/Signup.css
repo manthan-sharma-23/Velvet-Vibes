@@ -1,0 +1,222 @@
+#signup {
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#signup .container {
+  position: relative;
+  z-index: 10;
+  width: 57%;
+  height: 63%;
+  background-color: rgb(219, 226, 226);
+  padding: 3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 3px 5px black;
+}
+
+#signup .bg {
+  position: absolute;
+  width: 100%;
+  opacity: 0.4;
+  object-fit: cover;
+}
+
+#signup .pannel {
+  padding: 2vh;
+}
+
+#signup .lp {
+  /* border: 2px solid blue; */
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#signup .header {
+  font-size: 2.5rem;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-shadow: 0 0 5px white;
+}
+#signup .lp .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid brown; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* bottom: 20px; */
+  padding: 20px;
+}
+#signup .lp .form * {
+  width: 65%;
+  height: 5vh;
+
+  /* border-radius: 20px; */
+  padding: 12px;
+  margin: 5px;
+}
+#signup .lp .form input {
+  border: 0;
+  border-bottom: 2px solid grey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+#signup .lp .form span {
+  /* border: 2px solid green; */
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+#signup .lp .form span :nth-child(2) {
+  position: relative;
+  bottom: 15px;
+  text-align: center;
+  /* left: -10px; */
+  color: black;
+  transition: 0.2s;
+}
+#signup .lp .form span :nth-child(2):hover {
+  color: palevioletred;
+}
+#signup .lp .form span :nth-child(1) {
+  width: 45%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palevioletred;
+  border: 2px solid pink;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  transition: 0.4s;
+  font-size: 1rem;
+  position: relative;
+  /* margin-top: 20px; */
+  cursor: pointer;
+}
+#signup .lp .form span :nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+#signup .lp .form span .disabled {
+  background-color: grey;
+  border: 2px solid grey;
+  color: white;
+}
+#signup .lp .form span .disabled:hover {
+  background-color: grey;
+  border: 2px solid grey;
+  color: white;
+}
+
+#signup .lp {
+  /* border: 2px solid blue; */
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#signup .line {
+  height: 100%;
+  background-color: black;
+  width: 1.5px;
+}
+#signup .rp {
+  /* border: 2px solid blue; */
+  width: 49%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signup .rp div {
+  width: 100%;
+  border: 1px solid rgba(146, 146, 146, 0.707);
+  border-radius: 10px;
+  display: flex;
+  height: 100%;
+  padding: 2vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#signup .rp div span {
+  width: 100%;
+  height: 6vh;
+  margin: 1.7vh 0;
+  /* border: 2px solid red; */
+}
+#signup .rp div span button {
+  width: 100%;
+  border: 1px solid grey;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  padding-left: 2vw;
+  border-radius: 7px;
+  align-items: center;
+}
+#signup .rp div span button :nth-child(1) {
+  margin-right: 0.5vw;
+  font-size: 1.2rem;
+  border-radius: 100%;
+  background-color: white;
+}
+#signup .rp div span button :nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+#signup .google {
+  transition: 0.4s ease-in-out;
+}
+
+#signup .google:hover {
+  background-color: rgb(74, 113, 181);
+  color: white;
+}
+#signup .facebook {
+  transition: 0.4s ease-in-out;
+}
+#signup .facebook :nth-child(1) {
+  color: rgb(74, 113, 181);
+  padding: 2px;
+}
+#signup .facebook:hover {
+  background-color: rgb(74, 113, 181);
+  color: white;
+}
+#signup .guest {
+  transition: 0.4s ease-in-out;
+}
+#signup .guest :nth-child(1) {
+  padding: 1px;
+  color: black;
+}
+#signup .guest:hover {
+  background-color: black;
+  color: white;
+}

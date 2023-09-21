@@ -1,0 +1,192 @@
+.navs {
+  width: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.886
+  ); /* Gradient with increasing opacity */
+  transition: background-color 0.5s ease-in-out; /*Throttle up*/
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 1vw 10vw;
+  position: fixed;
+  z-index: 60;
+  justify-content: space-between;
+}
+
+.onscroll {
+  background-color: rgb(0, 0, 0);
+}
+
+#navbar .logo {
+  text-align: center;
+  width: 35vw;
+  font-size: 1.7vw;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1.5px;
+  font-family: "Playfair Display", serif;
+  background-color: transparent;
+  text-align: start;
+  /* border: 2px solid wheat; */
+}
+#navbar .pannel {
+  font-size: 1.18vw;
+  padding: 15px 20px;
+  /* color: rgb(0, 0, 0); */
+  width: 50vw;
+  height: 70%;
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#navbar .pannel .navigators {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  letter-spacing: 1.3px;
+  width: auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  font-weight: 100;
+  justify-content: center;
+  transition: transform 0.2s ease-in-out;
+  /* border: 2px solid blue; */
+}
+#navbar .pannel .navigators:hover {
+  transform: scaleX(1.03);
+}
+#navbar .pannel span {
+  /* border: 2px solid white; */
+  width: 13vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+}
+#navbar .pannel .navigators::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  background-color: rgb(0, 0, 0);
+  height: 0.07rem;
+  left: 2;
+  bottom: 0;
+}
+#navbar .pannel .center::after {
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: 0.5s transform ease-in-out;
+}
+#navbar .pannel .center:hover::after {
+  transform: scale(1, 1);
+}
+
+.white_active {
+  background-color: rgba(255, 255, 255, 0.825);
+}
+
+#navbar .second {
+  /* border: 2px solid black; */
+  width: 30vw;
+  height: 60%;
+  background-color: transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  overflow: hidden;
+}
+#navbar .second .menu {
+  background-color: transparent;
+  height: 35px;
+  /* border: 2px solid black; */
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#navbar .second .menu .bars {
+  margin: 2px;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  width: 26px;
+  /* border-radius: 10px; */
+  height: 4px;
+}
+#navbar .second .menu .bars.middle {
+  width: 18px;
+}
+.black_active {
+  color: black;
+}
+
+.newd {
+  background-color: transparent;
+  position: absolute;
+  width: auto;
+  height: auto;
+  /* border: 2px solid white; */
+  top: 65vh;
+  left: 95vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+}
+.newd * {
+  font-size: 1.8rem;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 4px;
+  transition: 250ms;
+}
+.newd *:hover {
+  background-color: palegoldenrod;
+}
+.newd .dots {
+  width: 0;
+  height: 143.5px;
+  position: relative;
+  left: 30%;
+  background-color: transparent;
+  border: none;
+  border-left: 4px solid rgb(255, 255, 255);
+  border-style: dashed;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  cursor: default;
+}
+
+/* ________________MOBILE PHONE ________________ */
+
+@media (max-width: 500px) {
+  #navbar .lp {
+    display: none;
+  }
+  #navbar .logo {
+    font-size: 1.8rem;
+    width: 60vw;
+    text-align: start;
+    letter-spacing: 1.3px;
+  }
+  #navbar .rp {
+    display: none;
+  }
+  .newd {
+    display: none;
+  }
+}

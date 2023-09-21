@@ -1,0 +1,163 @@
+#display_menu {
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 5vh 0;
+}
+
+#display_menu .menu_header {
+  /* border: 2px solid pink; */
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Proxima N W01 Reg";
+  position: relative;
+  right: 20vw;
+  letter-spacing: 1px;
+}
+#display_menu .display_items {
+  width: 85%;
+  padding: 2vw 5vw;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid rgb(222, 255, 222); */
+}
+
+#display_menu .each_sub {
+  /* border: 1px solid pink; */
+  width: 47%;
+  min-height: 25vh;
+  margin: 1vw;
+  overflow: hidden;
+}
+
+#display_menu .subcat_menu {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Cormorant Upright", serif;
+  position: relative;
+  font-weight: 800;
+  font-size: 1.9vw;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 1px;
+  right: 15%;
+  color: rgb(253, 208, 123);
+  border-bottom: 1.5px solid rgba(162, 139, 6, 0.747);
+}
+
+#display_menu .itemList_menu {
+  padding: 2vh 10%;
+  height: 80%;
+}
+#display_menu .itemList_menu li {
+  /* border: 2px solid red; */
+  margin: 3vh 0px;
+  height: 6.5vh;
+  width: 110%;
+  position: relative;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: disc;
+}
+#display_menu .itemList_menu li p :nth-child(1) {
+  padding: 0 5px;
+  position: absolute;
+  top: 1vh;
+  left: -2.4vw;
+  font-size: 2rem;
+  color: rgb(95, 95, 95);
+}
+#display_menu .itemList_menu li p {
+  /* border: 2px solid blue; */
+
+  width: 40%;
+}
+#display_menu .icons_list_menu * {
+  font-size: 0.75vw;
+  margin: 0 15px;
+  /* display: flex; */
+  padding: 5px;
+  border-radius: 7px;
+}
+#display_menu .icons_list_menu {
+  height: 100%;
+  /* border: 2px solid pink; */
+  width: 35%;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#display_menu .icons_list_menu .veg {
+  font-size: 0.75vw;
+  color: green;
+  border: 2px solid green;
+}
+#display_menu .icons_list_menu .nonveg {
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  border: 2px solid rgb(104, 0, 0);
+  color: brown;
+}
+#display_menu .icons_list_menu :nth-child(3) * {
+  font-size: 1.5rem;
+  color: rgb(171, 23, 73);
+  border: 0;
+  background-color: white;
+  padding: 1px;
+  border-radius: 100%;
+}
+#display_menu .icons_list_menu :nth-child(3) {
+  position: relative;
+  top: 2px;
+  border: 2px solid rgb(187, 31, 94);
+  border: 0;
+  padding: 0;
+}
+#display_menu .icons_list_menu :nth-child(4) * {
+  font-size: 1.75rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 2.6px;
+}
+#display_menu .icons_list_menu :nth-child(4) {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+#display_menu .each_item_inList .item_menu_price {
+  /* border: 2px solid white; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#display_menu .each_item_inList .favourites_display {
+  border: 0;
+  width: 40px;
+  cursor: pointer;
+  height: 80%;
+  margin: 0 1vw;
+  /* color: red; */
+}
+#display_menu .each_item_inList .favourites_display * {
+  color: rgba(101, 100, 100, 0.285);
+  position: relative;
+  top: 2.5px;
+  font-size: 1.6rem;
+  transition: 250ms ease-in;
+}

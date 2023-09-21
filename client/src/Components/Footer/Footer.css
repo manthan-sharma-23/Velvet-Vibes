@@ -1,0 +1,150 @@
+#footer {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+  background-color: rgb(255, 255, 255);
+  padding-top: 40px;
+  position: relative;
+
+  overflow: hidden;
+  z-index: -1;
+}
+
+#footer .logo {
+  height: auto;
+  font-size: 3.7vh;
+  /* top: 50%;/ */
+  bottom: -54px;
+
+  position: absolute;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.892);
+  display: block;
+  left: 34vw;
+  background-color: rgb(255, 255, 255);
+  font-family: "Playfair Display", serif;
+  padding-top: 100px;
+  /* border: 2px solid red; */
+  margin-top: 2rem;
+}
+#footer .line {
+  width: 80%;
+  position: relative;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.507);
+}
+
+#footer .content {
+  height: 60vh;
+  width: 80%;
+  display: flex;
+  /* border: 2px solid black; */
+  justify-content: space-between;
+  margin-top: 70px;
+  align-items: center;
+}
+
+#footer .content .text {
+  /* border: 2px solid black; */
+  height: 100%;
+  width: 50%;
+}
+#footer .content .text * {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+#footer .content .text h3 {
+  font-size: 1.6rem;
+}
+#footer .content .text .intro {
+  font-size: 1.1rem;
+  font-style: italic;
+  padding: 20px 0;
+  width: 75%;
+}
+#footer .content .text .address {
+  margin-top: 25px;
+  /* border: 2px solid red; */
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+#footer .content .text .address h6 {
+  font-size: 1.3rem;
+}
+
+#footer .content .enter .hed {
+  font-size: 1.6rem;
+  color: black;
+  font-style: italic;
+  font-family: "Borel", cursive;
+}
+#footer .content .enter .letter {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(222, 115, 133);
+}
+
+#footer .content .form {
+  /* border: 2px solid pink; */
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  align-items: start;
+  margin-top: 4vh;
+  padding: 30px;
+  padding-left: 0;
+}
+#footer .content .form * {
+  width: 70%;
+  height: 5vh;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 2px solid rgb(62, 62, 62);
+  border-radius: 2px;
+}
+#footer .content .form button {
+  width: 30%;
+  margin-top: 4vh;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+#footer .content .form button:hover {
+  color: black;
+  background-color: white;
+}
+#footer .content .srcs .enter {
+  color: rgba(21, 20, 20, 0.632);
+}
+#footer .content .srcs {
+  height: 100%;
+  /* border: 2px solid black; */
+  width: 40%;
+}
+
+#footer .content .srcs .social * {
+  color: rgba(29, 29, 29, 0.725);
+  margin: 0px 13px;
+  cursor: pointer;
+  font-size: 25px;
+}
+#footer .content .srcs .social {
+  /* border: 2px solid black; */
+  margin-top: 6vh;
+}
+#footer .content .srcs .social *:hover {
+  color: rgb(222, 115, 133);
+  position: relative;
+  bottom: 2px;
+  transform: scale(1.02);
+}
