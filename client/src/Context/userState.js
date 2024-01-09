@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
-import userContext from "./userContext";
+
+import { createContext } from "react";
+
+
+const userContext = createContext();
 
 const Userstate = ({ children }) => {
   const [user, setUser] = useState({ name: "", email: "" });

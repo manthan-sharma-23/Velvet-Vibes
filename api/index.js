@@ -43,7 +43,12 @@ app.use(express.urlencoded({ extended: true, limit: "30mb" }));
 connectToMongoDB();
 
 port = process.env.PORT || 5000;
+
 //routes
+app.get("/", (req, res) => {
+  res.status(201).send("Welcome to Velvet Vibes API please redirect to respected ports !");
+});
+
 app.use("/auth", authRoutes);
 app.use("/product", productRoutes);
 app.use("/cart", cartRoutes);
