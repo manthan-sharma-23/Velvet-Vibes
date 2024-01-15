@@ -5,6 +5,7 @@ import cover from "./Cover";
 import Footer from "../../Components/Footer/Footer";
 import Carousel from "../../Components/Carousel/Carousel";
 import Display from "./Display";
+import { BASE_URL } from "../../config";
 
 const Product = () => {
   const { category } = useParams();
@@ -13,7 +14,7 @@ const Product = () => {
   let subcategory = [];
 
   useEffect(() => {
-    fetch("http://localhost:3001/product/" + data.class)
+    fetch(`${BASE_URL}product/` + data.class)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

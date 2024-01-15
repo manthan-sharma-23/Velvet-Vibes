@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
+import userContext from "./userContext";
+import { BASE_URL } from "../config";
 
-import { createContext } from "react";
 
 
-const userContext = createContext();
 
 const Userstate = ({ children }) => {
   const [user, setUser] = useState({ name: "", email: "" });
@@ -12,13 +12,12 @@ const Userstate = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      fetch("http://localhost:3001/auth/getuser", {
+      fetch(`${BASE_URL}auth/getuser`, {
         method: "GET",
         headers: {
           Authorization: "Bearer " + token,
         },
-      })
-        .then((res) => res.json())
+      }).then((res) => res.json())
         .then((data) => {
           setUser({ name: data.name, email: data.email });
           setCart(data.cart);

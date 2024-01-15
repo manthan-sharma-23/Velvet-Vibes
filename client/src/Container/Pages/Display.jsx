@@ -7,6 +7,7 @@ import * as BsIcons from "react-icons/bs";
 import * as AiIcons from "react-icons/ai";
 import _ from "lodash";
 import userContext from "../../Context/userContext";
+import { BASE_URL } from "../../config";
 
 const Display = ({ subcategory, menu_name }) => {
   return (
@@ -30,7 +31,7 @@ function ItemList({ category, subcategory }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/product/" + category + "/" + subcategory)
+    fetch(`${BASE_URL}product/` + category + "/" + subcategory)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));
@@ -66,7 +67,7 @@ function List({ item, index }) {
   const handleClick = (id) => {
     const toggleActive = () => setActive((prevActive) => !prevActive);
     if (active) {
-      fetch("http://localhost:3001/auth/removefavourite/" + id, {
+      fetch(`${BASE_URL}auth/removefavourite/` + id, {
         method: "PUT",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
@@ -78,7 +79,7 @@ function List({ item, index }) {
           console.log(err);
         });
     } else {
-      fetch("http://localhost:3001/auth/favourite/" + id, {
+      fetch(`${BASE_URL}auth/favourite/` + id, {
         method: "PUT",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
@@ -92,9 +93,6 @@ function List({ item, index }) {
     }
   };
 
-  const handlePopup = () => {
-    const a = 2;
-  };
 
   return (
     <>

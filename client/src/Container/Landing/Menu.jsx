@@ -5,6 +5,7 @@ import Reserve from "./Reserve";
 import Review from "../../Components/Review/Review";
 import Staff from "./Staff";
 import Footer from "../../Components/Footer/Footer";
+import { BASE_URL } from "../../config";
 
 const Menu = () => {
   return (
@@ -48,7 +49,7 @@ function NewStuff() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/product/newproducts")
+    fetch(`${BASE_URL}product/newproducts`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.products);

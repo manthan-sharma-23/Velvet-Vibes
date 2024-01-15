@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import * as FcIcons from "react-icons/fc";
 import * as FaIcons from "react-icons/fa";
 import * as CgIcons from "react-icons/cg";
+import { BASE_URL } from "../../config";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Signup = () => {
 
   const handleClick = () => {
     if (password) {
-      fetch("http://localhost:3001/auth/signup", {
+      fetch(`${BASE_URL}auth/signup`, {
         method: "POST",
         body: JSON.stringify({
           name,

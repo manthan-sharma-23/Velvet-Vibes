@@ -23,9 +23,7 @@ const app = express();
 app.use(express.json());
 const allowedOrigins = [BASE_URL];
 app.use(
-  cors({
-    origin: allowedOrigins,
-  })
+  cors()
 );
 
 app.use(helmet());

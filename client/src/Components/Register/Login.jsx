@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import * as FcIcons from "react-icons/fc";
 import * as FaIcons from "react-icons/fa";
 import * as CgIcons from "react-icons/cg";
+import { BASE_URL } from "../../config";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Login = () => {
   const [confirmPass, setConfirmPass] = useState(null);
 
   const handleClick = () => {
-    fetch("http://localhost:3001/auth/login", {
+    fetch(`${BASE_URL}auth/login`, {
       method: "POST",
       body: JSON.stringify({
         email,
